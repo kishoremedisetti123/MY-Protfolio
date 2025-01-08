@@ -8,23 +8,20 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         header {
-            background-color: #c0c7c0;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 10px 0;
-        }
-
-        marquee {
+            padding: 20px 0;
             font-size: 1.5rem;
-            color: #333;
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
-            color: #333;
+            color: #4CAF50;
         }
 
         .content {
@@ -32,30 +29,30 @@
             margin: 20px auto;
             padding: 20px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .content img {
             display: block;
-            margin: 0 auto 20px;
+            margin: 20px auto;
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        .section h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
+        .section ul {
+            list-style-type: square;
+            margin: 10px 0 0 20px;
         }
 
         .logo-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .logo-container a {
@@ -64,8 +61,8 @@
         }
 
         .logo-container img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             transition: transform 0.3s;
         }
 
@@ -73,18 +70,12 @@
             transform: scale(1.2);
         }
 
-        .experience, .education, .projects {
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #e6ebe6;
+            padding: 15px;
+            background-color: #4CAF50;
             color: white;
-            position: relative;
+            margin-top: 20px;
         }
 
         a {
@@ -95,51 +86,44 @@
         a:hover {
             text-decoration: underline;
         }
-
-        .center-aligned {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <marquee behaviour="scroll" direction="right"> <b><u>Portfolio</u></b> </marquee>
+    Welcome to My Portfolio
 </header>
 
 <div class="content">
-    <h3>Hello, This is Venkata Kishore Medisetti</h3>
-
-    <img src="Kishore7.jpg" alt="Kishore" width="45%">
+    <h2>About Me</h2>
+    <img src="Kishore7.jpg" alt="Kishore">
+    <p>Hello, my name is M. Venkata Kishore. I'm from V. Madugula near Anakapalli. Currently, I am pursuing my graduation in Computer Science and Engineering (CSE) at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. I am passionate about learning and improving skills in the tech industry.</p>
 
     <div class="section">
-        <h1>About Me</h1>
-        <p>Hello, my name is M. Venkata Kishore. I'm from V. Madugula near Anakapalli. Currently, I am pursuing my graduation in Computer Science and Engineering CSE at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam.Passionate about Learning and Improving Skills in Tech Industry</p>
-    </div>
-
-    <div class="section hobbies">
         <h2>Hobbies</h2>
-        <p>Reading Books, Practicing Programming, Watching Movies, Playing Badminton, and Listening to Music during my free time.</p>
+        <p>Reading books, practicing programming, watching movies, playing badminton, and listening to music during my free time.</p>
     </div>
 
-    <div class="section career">
+    <div class="section">
         <h2>Career Goals</h2>
         <p>My ultimate career goal is to secure a position at a reputable company that offers both professional growth and a competitive package.</p>
     </div>
-    <div class="section education">
+
+    <div class="section">
         <h2>Education</h2>
         <ul>
-            <li><b>B.Tech in Computer Science and Engineering</b> - Gayatri Vidya Parishad College of Engineering (A)</li>
+            <li><b>B.Tech in CSE</b> - Gayatri Vidya Parishad College of Engineering (A)</li>
             <li><b>Intermediate</b> - Sri Chaitanya Junior College, Visakhapatnam</li>
-            <li><b>Schooling</b> - Z.P. High School, M. Kodur</li>
+            <li><b>Schooling</b> - Z.P. High School, M.Kodur</li>
         </ul>
     </div>
-    <div class="section experience">
+
+    <div class="section">
         <h2>Experience</h2>
-        <p><b>AICTE Internship in AI-ML:</b>Learned basics about how the Machine Learning models are created and trained</p>
-        <li><b>Portfolio Website:</b> A responsive personal portfolio showcasing skills, education, and projects.</li>
+        <p><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</p>
     </div>
-    <div class="section projects">
+
+    <div class="section">
         <h2>Projects</h2>
         <ul>
             <li><b>Portfolio Website:</b> A responsive personal portfolio showcasing skills, education, and projects.</li>
