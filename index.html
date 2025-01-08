@@ -1,103 +1,174 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>My Portfolio</title>
     <style>
         body {
-            background-color: #f5f5dc; /* Light beige */
             font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
         }
 
-        .center-aligned {
+        header {
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
-        }
-
-        .logo-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .logo-container a {
-            margin: 15px;
-            display: inline-block;
+            padding: 10px 0;
         }
 
         marquee {
-            font-size: 24px;
-            color: #444;
-            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
         }
 
         h1 {
             text-align: center;
             color: #333;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .logo-container {
+            text-align: center;
             margin-top: 20px;
         }
 
-        p {
-            margin: 20px;
-            line-height: 1.6;
-            color: #555;
+        .logo-container a {
+            margin: 10px;
+            display: inline-block;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
-            border: 3px solid #ccc;
-            border-radius: 10px;
+        .logo-container img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.2);
+        }
+
+        .experience, .education, .projects {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
         }
 
         a {
             text-decoration: none;
-            color: #0066cc;
+            color: #4CAF50;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        footer {
+        .center-aligned {
             text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #eee;
-            color: #333;
         }
     </style>
 </head>
 <body>
-    <marquee behaviour="scroll" direction="right"> <b><u>Venkata Kishore Medisetti</u></b> </marquee>
 
-    <h1>Passionate about Learning and Improving Skills in Tech Industry</h1>
+<header>
+    <marquee behaviour="scroll" direction="right"> <b><u>Portfolio</u></b> </marquee>
+</header>
 
-    <img width="45%" height="500" src="Kishore7.jpg" alt="Profile Picture">
+<div class="content">
+    <h1>Venkata Kishore MEdisetti</h1>
 
-    <p>Hello, my name is M. Venkata Kishore. I'm from V. Madugula near Anakapalli. Currently, I am pursuing my graduation in Computer Science and Engineering <a href="CSE.html">(CSE)</a> at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam.</p>
+    <img src="Kishore7.jpg" alt="Kishore" width="45%">
 
-    <p>My hobbies include reading books, practicing programming, watching movies, playing badminton, and listening to music during my free time.</p>
-
-    <p>My ultimate career goal is to secure a position at a reputable company that offers both professional growth and a competitive package.</p>
-
-    <h3 class="center-aligned">Connect with Me on Other Platforms</h3>
-
-    <div class="logo-container">
-        <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:80px;height:80px;">
-        </a>
-        <a href="https://www.instagram.com/kishore_medisetti" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width:80px;height:80px;">
-        </a>
-        <a href="mailto:kishoremedisetti35@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:80px;height:80px;">
-        </a>
-        <a href="https://wa.me/+916303589842" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width:80px;height:80px;">
-        </a>
+    <div class="section About Me">
+        <p>Hello, my name is M. Venkata Kishore. I'm from V. Madugula near Anakapalli. Currently, I am pursuing my graduation in Computer Science and Engineering CSE at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam.</p>
     </div>
 
-    <footer>
-        <p><b>Thanks for Visiting</b></p>
-    </footer>
+    <div class="section hobbies">
+        <h2>Hobbies</h2>
+        <p>Reading Books, Practicing Programming, Watching Movies, Playing Badminton, and Listening to Music during my free time.</p>
+    </div>
+
+    <div class="section career">
+        <h2>Career Goals</h2>
+        <p>My ultimate career goal is to secure a position at a reputable company that offers both professional growth and a competitive package.</p>
+    </div>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+        <p><b>Internship at ABC Company:</b> Worked on building a responsive web application using modern technologies like HTML, CSS, and JavaScript.</p>
+        <p><b>Open Source Contributions:</b> Contributed to projects related to data structures and algorithms on GitHub.</p>
+    </div>
+
+    <div class="section education">
+        <h2>Education</h2>
+        <ul>
+            <li><b>B.Tech in Computer Science and Engineering</b> - Gayatri Vidya Parishad College of Engineering (A)</li>
+            <li><b>Intermediate</b> - Sri Chaitanya Junior College, Visakhapatnam</li>
+            <li><b>Schooling</b> - Z.P. High School, M. Kodur</li>
+        </ul>
+    </div>
+
+    <div class="section projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Portfolio Website:</b> A responsive personal portfolio showcasing skills, education, and projects.</li>
+            <li><b>Queue Implementation:</b> Built a circular queue system in C for efficient data management.</li>
+        </ul>
+    </div>
+
+    <div class="logo-container">
+        <h2>Connect with Me</h2>
+        <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/kishore_medisetti" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="mailto:kishoremedisetti35@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        </a>
+        <a href="https://wa.me/+916303589842" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>Thanks for Visiting</p>
+</footer>
+
 </body>
 </html>
