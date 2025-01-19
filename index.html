@@ -45,7 +45,7 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             margin-bottom: 20px;
             background-color: #e8f5e9;
             padding: 15px;
@@ -60,7 +60,7 @@
 
         .intro-details {
             flex: 1;
-            margin: 20px;
+            margin-left: 20px;
         }
 
         .section {
@@ -114,8 +114,8 @@
             margin-bottom: 20px;
         }
 
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
+        /* Media Queries for Orientation */
+        @media (orientation: portrait) {
             .content {
                 padding: 10px;
             }
@@ -144,18 +144,31 @@
             }
         }
 
-        @media (max-width: 480px) {
+        @media (orientation: landscape) {
+            .content {
+                padding: 20px;
+            }
+
+            .intro-section {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .intro-details {
+                margin-left: 20px;
+            }
+
             .intro-section img {
-                max-height: 150px;
+                max-height: 300px;
             }
 
             h1, h2 {
-                font-size: 1.2rem;
+                font-size: 2rem;
             }
 
             .logo-container img {
-                width: 35px;
-                height: 35px;
+                width: 50px;
+                height: 50px;
             }
         }
     </style>
@@ -209,7 +222,6 @@
         <p><li>Python Foundation Course from Infosys Spring Board</li></p>
         <p><li>One day AI tools workshop from be10x</li></p>
         <p><li>Generative AI from Linkedin</li></p>
-
     </div>
 
     <div class="section projects">
@@ -242,7 +254,6 @@
         <a href="https://github.com/kishoremedisetti123" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
         </a>
-
     </div>
 </div>
 
