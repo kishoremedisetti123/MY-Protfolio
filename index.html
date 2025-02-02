@@ -7,16 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         marquee {
@@ -27,10 +27,11 @@
         h1 {
             text-align: center;
             color: #333;
+            font-size: 36px;
         }
 
         h2 {
-            color: #4CAF50;
+            color: #3498db;
             margin-bottom: 10px;
             text-align: left;
         }
@@ -38,10 +39,10 @@
         .content {
             max-width: 900px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         .intro-section {
@@ -49,9 +50,9 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .intro-section img {
@@ -67,9 +68,9 @@
 
         .section {
             margin-bottom: 20px;
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .logo-container {
@@ -95,14 +96,14 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
             margin-top: 20px;
         }
 
         a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #3498db;
         }
 
         a:hover {
@@ -177,6 +178,46 @@
                 padding: 10px;
             }
         }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 10px;
+            }
+
+            .quote {
+                font-size: 14px;
+            }
+
+            .section {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .intro-section {
+                padding: 10px;
+            }
+
+            .intro-details {
+                margin-left: 0;
+            }
+
+            .logo-container img {
+                width: 35px;
+                height: 35px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -201,33 +242,39 @@
     <div class="section education">
         <h2>Education</h2>
         <ul>
-            <p><li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li></p>
-            <p><li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li></p>
-            <p><li><b>Schooling:</b> Z.P. High School, M.Kodur</li></p>
+            <li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li>
+            <li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li>
+            <li><b>Schooling:</b> Z.P. High School, M.Kodur</li>
         </ul>
     </div>
 
     <div class="section experience">
         <h2>Experience</h2>
-        <p><li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li></p>
+        <ul>
+            <li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li>
+        </ul>
     </div>
 
     <div class="section skills">
         <h2>Skills</h2>
-        <p><li>C (Programming Language)</li></p>
-        <p><li>Java (Programming Language)</li></p>
-        <p><li>Basic Git, GitHub, and Linux commands</li></p>
-        <p><li>HTML</li></p>
-        <p><li>Basic C++ and Python</li></p>
-        <p><li>Usage of various AI tools</li></p>
+        <ul>
+            <li>C (Programming Language)</li>
+            <li>Java (Programming Language)</li>
+            <li>Basic Git, GitHub, and Linux commands</li>
+            <li>HTML</li>
+            <li>Basic C++ and Python</li>
+            <li>Usage of various AI tools</li>
+        </ul>
     </div>
 
     <div class="section certifications">
         <h2>Certifications</h2>
-        <p><li>Basic C++ Programming skills from edX</li></p>
-        <p><li>Python Foundation Course from Infosys Spring Board</li></p>
-        <p><li>One-day AI tools workshop from be10x</li></p>
-        <p><li>Generative AI from LinkedIn</li></p>
+        <ul>
+            <li>Basic C++ Programming skills from edX</li>
+            <li>Python Foundation Course from Infosys Spring Board</li>
+            <li>One-day AI tools workshop from be10x</li>
+            <li>Generative AI from LinkedIn</li>
+        </ul>
     </div>
 
     <div class="section projects">
