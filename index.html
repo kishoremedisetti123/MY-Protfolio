@@ -7,71 +7,84 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #388e3c; /* Dark green */
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            color: black; /* Text color set to black */
         }
 
         header {
-            background-color: #388e3c;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            font-size: 28px;
-            font-weight: bold;
+            padding: 10px 0;
         }
 
         marquee {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .intro-section {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            margin: 20px;
-            padding: 25px;
-            border-radius: 10px;
-            font-size: 24px;
-            color: black; /* Text color set to black */
-            background-color: #c8e6c9; /* Light green */
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         .intro-section img {
-            max-width: 250px;
+            max-width: 300px;
             height: auto;
             border-radius: 50%;
-            margin-right: 20px;
         }
 
-        .intro-section .intro-details {
-            max-width: 600px;
+        .intro-details {
+            flex: 1;
+            margin-left: 20px;
         }
 
         .section {
-            margin: 20px;
-            padding: 25px;
-            border-radius: 10px;
-            font-size: 24px;
-            color: black; /* Text color set to black */
-            background-color: #c8e6c9; /* Light green */
+            margin-bottom: 20px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         .logo-container {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .logo-container a {
-            margin: 15px;
+            margin: 10px;
             display: inline-block;
         }
 
         .logo-container img {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             transition: transform 0.3s;
         }
 
@@ -81,18 +94,15 @@
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #2e7d32;
+            padding: 10px;
+            background-color: #4CAF50;
             color: white;
-            font-size: 20px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         a {
             text-decoration: none;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
+            color: #4CAF50;
         }
 
         a:hover {
@@ -102,9 +112,8 @@
         .quote {
             text-align: center;
             font-style: italic;
-            color: black; /* Text color set to black */
+            color: #555;
             margin-bottom: 20px;
-            font-size: 24px;
         }
 
         /* Media Queries for responsiveness */
@@ -115,41 +124,57 @@
             }
 
             .intro-section img {
-                max-width: 400px;
-                margin-right: 0;
-                margin-bottom: 15px;
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+
+            .intro-details {
+                margin-left: 0;
             }
 
             .logo-container img {
-                width: 60px;
-                height: 60px;
+                width: 45px;
+                height: 45px;
             }
 
-            .section {
-                font-size: 20px;
+            footer {
+                font-size: 14px;
             }
         }
 
         @media (max-width: 768px) {
             .intro-section img {
-                max-width: 300px;
+                max-width: 200px;
             }
 
             .logo-container img {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
             }
 
-            header {
-                font-size: 24px;
+            .content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            footer {
+                font-size: 12px;
             }
 
             .quote {
-                font-size: 20px;
+                font-size: 16px;
             }
 
             .section {
-                font-size: 18px;
+                font-size: 16px;
+                padding: 10px;
             }
         }
     </style>
@@ -157,85 +182,85 @@
 <body>
 
 <header>
-    <marquee behaviour="scroll" direction="right">Kishore's Portfolio</marquee>
+    <marquee behaviour="scroll" direction="right"><b>Kishore's Portfolio</b></marquee>
 </header>
 
-<h1 style="text-align: center; font-size: 36px;">Welcome to My Portfolio</h1>
+<div class="content">
+    <h1>Welcome to My Portfolio</h1>
 
-<div class="intro-section">
-    <img src="Kishore7.jpg" alt="Kishore">
-    <div class="intro-details">
-        <h2>About Me</h2>
-        <p>Hello, This is M.Venkata Kishore and I'm from V. Madugula near Anakapalle. Currently, I'm pursuing my Graduation in Computer Science and Engineering (CSE) at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. I'm passionate about learning and improving skills in the tech industry.</p>
-        <p>My hobbies and interests are reading books, practicing coding, watching movies, playing badminton, and listening to music during my free time.</p>
+    <div class="intro-section">
+        <img src="Kishore7.jpg" alt="Kishore">
+        <div class="intro-details">
+            <h2>About Me</h2>
+            <p>Hello, This is M.Venkata Kishore and I'm from V. Madugula near Anakapalle. Currently, I'm pursuing my Graduation in Computer Science and Engineering (CSE) at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. I'm passionate about learning and improving skills in the tech industry.</p>
+            <p>My hobbies and interests include reading books, practicing coding, watching movies, playing badminton, and listening to music during my free time.</p>
+            <p>My ultimate career goal is to secure a challenging position in a reputable organization that fosters professional growth and offers a competitive package.</p>
+        </div>
     </div>
-</div>
 
-<div class="section education">
-    <h2>Education</h2>
-    <ul>
-        <li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A)</li>
-        <li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College</li>
-        <li><b>Schooling:</b> Z.P. High School</li>
-    </ul>
-</div>
+    <div class="section education">
+        <h2>Education</h2>
+        <ul>
+            <p><li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li></p>
+            <p><li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li></p>
+            <p><li><b>Schooling:</b> Z.P. High School, M.Kodur</li></p>
+        </ul>
+    </div>
 
-<div class="section experience">
-    <h2>Experience</h2>
-    <ul>
-        <li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li>
-    </ul>
-</div>
+    <div class="section experience">
+        <h2>Experience</h2>
+        <p><li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li></p>
+    </div>
 
-<div class="section skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>C, Java, HTML, Python</li>
-        <li>Git, GitHub, Linux Commands</li>
-    </ul>
-</div>
+    <div class="section skills">
+        <h2>Skills</h2>
+        <p><li>C (Programming Language)</li></p>
+        <p><li>Java (Programming Language)</li></p>
+        <p><li>Basic Git, GitHub, and Linux commands</li></p>
+        <p><li>HTML</li></p>
+        <p><li>Basic C++ and Python</li></p>
+        <p><li>Usage of various AI tools</li></p>
+    </div>
 
-<div class="section certifications">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Basic C++ Programming skills from edX</li>
-        <li>Python Foundation Course from Infosys Spring Board</li>
-        <li>One day AI tools workshop from be10x</li>
-        <li>Generative AI from LinkedIn</li>
-    </ul>
-</div>
+    <div class="section certifications">
+        <h2>Certifications</h2>
+        <p><li>Basic C++ Programming skills from edX</li></p>
+        <p><li>Python Foundation Course from Infosys Spring Board</li></p>
+        <p><li>One-day AI tools workshop from be10x</li></p>
+        <p><li>Generative AI from LinkedIn</li></p>
+    </div>
 
-<div class="section projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><b>Portfolio Website:</b> A responsive personal Portfolio showcasing Skills, Education, and Projects.</li>
-    </ul>
-</div>
+    <div class="section projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Portfolio Website:</b> A responsive personal portfolio showcasing skills, education, and projects.</li>
+        </ul>
+    </div>
 
-<div class="logo-container">
-    <h2>Connect with Me</h2>
-    <p class="quote">"Feel free to connect with me, and let's make something extraordinary together!"</p>
-    <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    </a>
-    <a href="mailto:kishoremedisetti35@gmail.com">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-    </a>
-    <a href="https://wa.me/+916303589842" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
-    <a href="https://www.instagram.com/kishore_medisetti" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-    </a>
-    <a href="https://github.com/kishoremedisetti123" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-    </a>
-    <a href="https://twitter.com/kishore_medisetti" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-    </a>
-    <a href="https://www.facebook.com/kishore.medisetti" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
-    </a>
+    <div class="logo-container">
+        <h2>Connect with Me</h2>
+        <p class="quote">"Feel free to connect with me, and let's make something extraordinary together!"</p>
+
+        <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+
+        <a href="mailto:kishoremedisetti35@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        </a>
+
+        <a href="https://wa.me/+916303589842" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://www.instagram.com/kishore_medisetti" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+
+        <a href="https://github.com/kishoremedisetti123" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+    </div>
 </div>
 
 <footer>
