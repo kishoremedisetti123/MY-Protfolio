@@ -24,13 +24,11 @@
             color: white;
         }
 
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
+        .intro-section, .section {
+            margin: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .intro-section {
@@ -38,9 +36,6 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
         }
 
         .intro-section img {
@@ -53,13 +48,6 @@
         .intro-details {
             flex: 1;
             text-align: center;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
         }
 
         .logo-container {
@@ -107,11 +95,6 @@
         }
 
         @media (max-width: 768px) {
-            .content {
-                width: 90%;
-                padding: 15px;
-            }
-
             .intro-section {
                 flex-direction: column;
                 text-align: center;
@@ -126,16 +109,6 @@
                 height: 40px;
             }
         }
-
-        @media (max-width: 480px) {
-            marquee {
-                font-size: 1.2rem;
-            }
-
-            .content {
-                width: 95%;
-            }
-        }
     </style>
 </head>
 <body>
@@ -144,47 +117,69 @@
     <marquee behaviour="scroll" direction="right"><b>Kishore's Portfolio</b></marquee>
 </header>
 
-<div class="content">
-    <h1>Welcome to My Portfolio</h1>
+<h1 style="text-align: center;">Welcome to My Portfolio</h1>
 
-    <div class="intro-section">
-        <img src="Kishore7.jpg" alt="Kishore">
-        <div class="intro-details">
-            <h2>About Me</h2>
-            <p>Hello, This is M.Venkata Kishore from V. Madugula. I'm pursuing a B.Tech in CSE at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. Passionate about tech and learning.</p>
-        </div>
+<div class="intro-section">
+    <img src="Kishore7.jpg" alt="Kishore">
+    <div class="intro-details">
+        <h2>About Me</h2>
+        <p>Hello, This is M.Venkata Kishore from V. Madugula. I'm pursuing a B.Tech in CSE at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. Passionate about tech and learning.</p>
     </div>
+</div>
 
-    <div class="section education">
-        <h2>Education</h2>
-        <ul>
-            <li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A)</li>
-            <li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College</li>
-            <li><b>Schooling:</b> Z.P. High School</li>
-        </ul>
-    </div>
+<div class="section education">
+    <h2>Education</h2>
+    <ul>
+        <li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A)</li>
+        <li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College</li>
+        <li><b>Schooling:</b> Z.P. High School</li>
+    </ul>
+</div>
 
-    <div class="section skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>C, Java, HTML, Python</li>
-            <li>Git, GitHub, Linux Commands</li>
-        </ul>
-    </div>
+<div class="section experience">
+    <h2>Experience</h2>
+    <ul>
+        <li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li>
+    </ul>
+</div>
 
-    <div class="logo-container">
-        <h2>Connect with Me</h2>
-        <p class="quote">"Let's create something great together!"</p>
-        <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-        </a>
-        <a href="mailto:kishoremedisetti35@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-        </a>
-        <a href="https://wa.me/+916303589842" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        </a>
-    </div>
+<div class="section skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>C, Java, HTML, Python</li>
+        <li>Git, GitHub, Linux Commands</li>
+    </ul>
+</div>
+
+<div class="section certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Basic C++ Programming skills from edX</li>
+        <li>Python Foundation Course from Infosys Spring Board</li>
+        <li>One day AI tools workshop from be10x</li>
+        <li>Generative AI from LinkedIn</li>
+    </ul>
+</div>
+
+<div class="section projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><b>Portfolio Website:</b> A responsive personal Portfolio showcasing Skills, Education, and Projects.</li>
+    </ul>
+</div>
+
+<div class="logo-container">
+    <h2>Connect with Me</h2>
+    <p class="quote">"Let's create something great together!"</p>
+    <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:kishoremedisetti35@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </a>
+    <a href="https://wa.me/+916303589842" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
 </div>
 
 <footer>
