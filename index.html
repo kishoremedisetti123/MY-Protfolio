@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #3498db;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 10px 0;
         }
 
         marquee {
@@ -27,11 +25,10 @@
         h1 {
             text-align: center;
             color: #333;
-            font-size: 36px;
         }
 
         h2 {
-            color: #3498db;
+            color: #4CAF50;
             margin-bottom: 10px;
             text-align: left;
         }
@@ -39,10 +36,10 @@
         .content {
             max-width: 900px;
             margin: 20px auto;
-            padding: 25px;
+            padding: 20px;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .intro-section {
@@ -50,9 +47,9 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         .intro-section img {
@@ -68,9 +65,9 @@
 
         .section {
             margin-bottom: 20px;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         .logo-container {
@@ -96,14 +93,14 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #4CAF50;
             color: white;
             margin-top: 20px;
         }
 
         a {
             text-decoration: none;
-            color: #3498db;
+            color: #4CAF50;
         }
 
         a:hover {
@@ -116,106 +113,20 @@
             color: #555;
             margin-bottom: 20px;
         }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
             .intro-section {
                 flex-direction: column;
-                text-align: center;
+                text-align: right;
             }
 
             .intro-section img {
-                max-width: 250px;
-                margin-bottom: 20px;
-            }
-
-            .intro-details {
-                margin-left: 0;
+                max-width: 400px;
+                image-orientation:left;
             }
 
             .logo-container img {
-                width: 45px;
-                height: 45px;
-            }
-
-            footer {
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .intro-section img {
-                max-width: 200px;
-            }
-
-            .logo-container img {
-                width: 40px;
-                height: 40px;
-            }
-
-            .content {
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            footer {
-                font-size: 12px;
-            }
-
-            .quote {
-                font-size: 16px;
-            }
-
-            .section {
-                font-size: 16px;
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .content {
-                padding: 10px;
-            }
-
-            footer {
-                font-size: 10px;
-            }
-
-            .quote {
-                font-size: 14px;
-            }
-
-            .section {
-                font-size: 14px;
-                padding: 8px;
-            }
-
-            .intro-section {
-                padding: 10px;
-            }
-
-            .intro-details {
-                margin-left: 0;
-            }
-
-            .logo-container img {
-                width: 35px;
-                height: 35px;
+                width: 60px;
+                height: 60px;
             }
         }
     </style>
@@ -233,54 +144,49 @@
         <img src="Kishore7.jpg" alt="Kishore">
         <div class="intro-details">
             <h2>About Me</h2>
-            <p>Hello, This is M.Venkata Kishore and I'm from V. Madugula near Anakapalle. Currently, I'm pursuing my Graduation in Computer Science and Engineering (CSE) at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam. I'm passionate about learning and improving skills in the tech industry.</p>
-            <p>My hobbies and interests include reading books, practicing coding, watching movies, playing badminton, and listening to music during my free time.</p>
-            <p>My ultimate career goal is to secure a challenging position in a reputable organization that fosters professional growth and offers a competitive package.</p>
+            <p>Hello,This is M.Venkata Kishore and i'm from V. Madugula near Anakapalle.Currently, I'm pursuing my Graduation in Computer Science and Engineering(CSE) at Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam.I'm Passionate about Learning and Improving Skills in Tech Industry.</p>
+            <p>My Hobbies and Interests are Reading Books, Practicing Coding, Watching Movies, Playing Badminton, and Listening to Music during my free time.</p>
+            <p>My Ultimate Career Goal is to Secure a Challenging Position in a Reputable Organization that fosters professional growth and offers a competitive package.</p>
         </div>
     </div>
 
     <div class="section education">
         <h2>Education</h2>
         <ul>
-            <li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li>
-            <li><b>12th Grade (MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li>
-            <li><b>Schooling:</b> Z.P. High School, M.Kodur</li>
+            <p><li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li></p>
+            <p><li><b>12th Grade(MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li></p>
+            <p><li><b>Schooling:</b> Z.P.High School, M.Kodur</li></p>
         </ul>
     </div>
 
     <div class="section experience">
         <h2>Experience</h2>
-        <ul>
-            <li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li>
-        </ul>
+        <p><li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li></p>
     </div>
 
     <div class="section skills">
         <h2>Skills</h2>
-        <ul>
-            <li>C (Programming Language)</li>
-            <li>Java (Programming Language)</li>
-            <li>Basic Git, GitHub, and Linux commands</li>
-            <li>HTML</li>
-            <li>Basic C++ and Python</li>
-            <li>Usage of various AI tools</li>
-        </ul>
+        <p><li>C(Programming Language)</li></p>
+        <p><li>Java(Programming Language)</li></p>
+        <p><li>Basic Git,Github and Linux commands</li></p>
+        <p><li>HTML</li></p>
+        <p><li>Basic C++ and Python</li></p>
+        <p><li>Usage of various AI tools</li></p>
     </div>
 
     <div class="section certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>Basic C++ Programming skills from edX</li>
-            <li>Python Foundation Course from Infosys Spring Board</li>
-            <li>One-day AI tools workshop from be10x</li>
-            <li>Generative AI from LinkedIn</li>
-        </ul>
+        <p><li>Basic C++ Programming skills from edx</li></p>
+        <p><li>Python Foundation Course from Infosys Spring Board</li></p>
+        <p><li>One day AI tools workshop from be10x</li></p>
+        <p><li>Generative AI from Linkedin</li></p>
+
     </div>
 
     <div class="section projects">
         <h2>Projects</h2>
         <ul>
-            <li><b>Portfolio Website:</b> A responsive personal portfolio showcasing skills, education, and projects.</li>
+            <li><b>Portfolio Website:</b> A responsive personal Portfolio showcasing Skills,Education and Projects.</li>
         </ul>
     </div>
 
@@ -307,6 +213,7 @@
         <a href="https://github.com/kishoremedisetti123" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
         </a>
+
     </div>
 </div>
 
