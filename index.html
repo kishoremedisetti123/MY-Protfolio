@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,7 +24,7 @@
             color: white;
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
             color: #333;
         }
@@ -29,7 +32,6 @@
         h2 {
             color: #4CAF50;
             margin-bottom: 10px;
-            text-align: left;
         }
 
         .content {
@@ -45,15 +47,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 20px;
             background-color: #e8f5e9;
             padding: 15px;
             border-radius: 8px;
         }
 
         .intro-section img {
-            max-width: 300px;
-            height: auto;
+            max-width: 250px;
             border-radius: 50%;
         }
 
@@ -63,20 +63,44 @@
         }
 
         .section {
-            margin-bottom: 20px;
             background-color: #e8f5e9;
             padding: 15px;
             border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .skill {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .skill i {
+            font-size: 22px;
+        }
+
+        .skill:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
         }
 
         .logo-container {
             text-align: center;
-            margin-top: 20px;
-        }
-
-        .logo-container a {
-            margin: 10px;
-            display: inline-block;
         }
 
         .logo-container img {
@@ -97,13 +121,13 @@
             margin-top: 20px;
         }
 
-        a {
-            text-decoration: none;
-            color: #4CAF50;
+        ul {
+            list-style: none;
+            padding: 0;
         }
 
-        a:hover {
-            text-decoration: underline;
+        ul li {
+            margin-bottom: 5px;
         }
 
         .quote {
@@ -113,7 +137,7 @@
             margin-bottom: 20px;
         }
     </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
@@ -128,71 +152,59 @@
         <img src="Kishore7.jpg" alt="Kishore">
         <div class="intro-details">
             <h2>About Me</h2>
-            <p>I am M. Venkata Kishore, a Computer Science and Engineering <a href="CSE.html">(CSE)</a>Undergraduate at <a href="https://www.gvpce.ac.in/">Gayatri Vidya Parishad College of Engineering (Autonomous), Visakhapatnam</a>. Passionate about technology. I'm constantly exploring new skills and innovations in the tech industry.</p>
-
-            <p>My interests span across coding, reading books, watching movies, playing badminton, and listening to music. I enjoy solving problems and enhancing my technical expertise, striving for continuous growth in the ever-evolving tech landscape.</p>
-
-            <p>My ultimate career goal is to secure a position at a reputable organization that fosters professional growth and offers a competitive environment. I am eager to contribute my skills, learn from industry experts, and make a meaningful impact in the field of technology.</p>
+            <p>I am M. Venkata Kishore, a Computer Science and Engineering <a href="CSE.html">(CSE)</a> Undergraduate at <a href="https://www.gvpce.ac.in/">Gayatri Vidya Parishad College of Engineering</a>.</p>
         </div>
     </div>
 
-    <div class="section education">
+    <div class="section">
         <h2>Education</h2>
         <ul>
-            <p><li><b>B.Tech in CSE:</b> Gayatri Vidya Parishad College of Engineering (A), Visakhapatnam</li></p>
-            <p><li><b>12th Grade(MPC):</b> Sri Chaitanya Junior College, Visakhapatnam</li></p>
-            <p><li><b>Schooling:</b> Z.P.High School, M.Kodur</li></p>
+            <li><b>B.Tech in CSE:</b> GVP College of Engineering, Visakhapatnam</li>
+            <li><b>12th Grade:</b> Sri Chaitanya Junior College</li>
+            <li><b>Schooling:</b> Z.P.High School, M.Kodur</li>
         </ul>
     </div>
 
-    <div class="section experience">
+    <div class="section">
         <h2>Experience</h2>
-        <p><li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li></p>
-        <p><li><b>Data Analytics Support Lead:</b> Taking role as Data Analytics Support lead at @ ASCI(Association of Computer Intellects)</li></p>
+        <ul>
+            <li><b>AICTE Internship in AI-ML:</b> Learned the basics of machine learning.</li>
+            <li><b>Data Analytics Support Lead:</b> Role at ASCI (Association of Computer Intellects)</li>
+        </ul>
     </div>
 
-    <div class="skills">
+    <div class="section">
         <h2>Skills</h2>
-        <a href="#" class="skill" title="C Programming">
-            <i class="fas fa-code"></i> C
-        </a>
-        <a href="#" class="skill" title="Java Programming">
-            <i class="fab fa-java"></i> Java
-        </a>
-        <a href="#" class="skill" title="Git, GitHub & Linux">
-            <i class="fab fa-git-alt"></i> Git & Linux
-        </a>
-        <a href="#" class="skill" title="HTML & CSS">
-            <i class="fab fa-html5"></i> HTML & CSS
-        </a>
-        <a href="#" class="skill" title="C++ & Python">
-            <i class="fab fa-python"></i> C++ & Python
-        </a>
-        <a href="#" class="skill" title="AI Tools">
-            <i class="fas fa-robot"></i> AI Tools
-        </a>
+        <div class="skills-container">
+            <a href="#" class="skill"><i class="fas fa-code"></i> C</a>
+            <a href="#" class="skill"><i class="fab fa-java"></i> Java</a>
+            <a href="#" class="skill"><i class="fab fa-git-alt"></i> Git & Linux</a>
+            <a href="#" class="skill"><i class="fab fa-html5"></i> HTML & CSS</a>
+            <a href="#" class="skill"><i class="fab fa-python"></i> C++ & Python</a>
+            <a href="#" class="skill"><i class="fas fa-robot"></i> AI Tools</a>
+        </div>
     </div>
-    
 
-    <div class="section certifications">
+    <div class="section">
         <h2>Certifications</h2>
-        <p><li>Basic C++ Programming skills from EDX</li></p>
-        <p><li>Python Foundation Course from Infosys Spring Board</li></p>
-        <p><li>One day AI tools workshop from be10x</li></p>
-        <p><li>Generative AI from Linkedin</li></p>
-
+        <ul>
+            <li>Basic C++ Programming - EDX</li>
+            <li>Python Foundation - Infosys Spring Board</li>
+            <li>One-day AI tools workshop - Be10x</li>
+            <li>Generative AI - LinkedIn</li>
+        </ul>
     </div>
 
-    <div class="section projects">
+    <div class="section">
         <h2>Projects</h2>
         <ul>
-            <li><b>Portfolio Website:</b> A responsive personal Portfolio showcasing Skills,Education and Projects.</li>
+            <li><b>Portfolio Website:</b> A responsive portfolio showcasing skills & projects.</li>
         </ul>
     </div>
 
     <div class="logo-container">
         <h2>Connect with Me</h2>
-        <p class="quote">"Feel free to connect with me, and let's make something extraordinary together!"</p>
+        <p class="quote">"Let's create something extraordinary together!"</p>
 
         <a href="https://www.linkedin.com/in/venkata-kishore-medisetti-4a5616292" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
@@ -201,25 +213,21 @@
         <a href="mailto:kishoremedisetti35@gmail.com">
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
         </a>
-
-        <a href="https://wa.me/+916303589842" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        </a>
-
-        <a href="https://www.instagram.com/kishore_medisetti" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        </a>
-
-        <a href="https://github.com/kishoremedisetti123" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-        </a>
-
     </div>
 </div>
 
 <footer>
     <p>Thanks for Visiting</p>
 </footer>
+
+<script>
+    document.querySelectorAll('.skill').forEach(skill => {
+        skill.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("Learn more about " + skill.textContent.trim());
+        });
+    });
+</script>
 
 </body>
 </html>
