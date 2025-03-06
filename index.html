@@ -147,31 +147,48 @@
 
     <div class="section experience">
         <h2>Experience</h2>
-        <p><li><b>AICTE Internship in AI-ML:</b> Learned the basics of how machine learning models are created and trained.</li></p>
-        <p><li><b>Data Analytics Support Lead:</b> Taking role as Data Analytics Support lead at ASCI(Association of Computer Intellects) at my College</li></p>
+        <p><li><b>AICTE Internship in AI-ML :</b> Learned the basics of how machine learning models are created and trained.</li></p>
+        <p><li><b>Data Analytics Support Lead :</b> Taking role as Data Analytics Support lead at ASCI(Association of Computer Intellects) at my College</li></p>
     </div>
 
     <div class="section skills">
         <h2>Skills</h2>
-        <a href="#" class="skill" title="C Programming">
-            <i class="fas fa-code"></i> C
-        </a>
-        <a href="#" class="skill" title="Java Programming">
-            <i class="fab fa-java"></i> Java
-        </a>
-        <a href="#" class="skill" title="Git, GitHub & Linux">
-            <i class="fab fa-git-alt"></i> Git & Linux
-        </a>
-        <a href="#" class="skill" title="HTML & CSS">
-            <i class="fab fa-html5"></i> HTML & CSS
-        </a>
-        <a href="#" class="skill" title="C++ & Python">
-            <i class="fab fa-python"></i> C++ & Python
-        </a>
-        <a href="#" class="skill" title="AI Tools">
-            <i class="fas fa-robot"></i> AI Tools
-        </a>
+        <div class="skill-container">
+            <div class="skill" onclick="showSkillInfo('c')" style="background-color: #A8B9CC;">
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C Programming">
+                <p>C Programming</p>
+            </div>
+            <div class="skill" onclick="showSkillInfo('java')" style="background-color: #007396;">
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill" onclick="showSkillInfo('git')" style="background-color: #F34F29;">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968853.png" alt="Git & Linux">
+                <p>Git & Linux</p>
+            </div>
+            <div class="skill" onclick="showSkillInfo('html')" style="background-color: #E34F26;">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML & CSS">
+                <p>HTML & CSS</p>
+            </div>
+            <div class="skill" onclick="showSkillInfo('python')" style="background-color: #3776AB;">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="C++ & Python">
+                <p>C++ & Python</p>
+            </div>
+            <div class="skill" onclick="showSkillInfo('ai')" style="background-color: #8A2BE2;">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712036.png" alt="AI Tools">
+                <p>AI Tools</p>
+            </div>
+        </div>
     </div>
+    
+    <!-- Skill Info Popup -->
+    <div id="skill-info" class="skill-popup">
+        <span class="close-btn" onclick="closeSkillInfo()">&times;</span>
+        <h3 id="skill-title"></h3>
+        <p id="skill-description"></p>
+        <img id="skill-image" src="" alt="Skill Image">
+    </div>
+    
     
 
     <div class="section certifications">
@@ -187,7 +204,7 @@
         <h2>Projects</h2>
         <ul>
             <li><b>Portfolio Website:</b> A responsive personal Portfolio showcasing Skills,Education and Projects.</li>
-            <li><b>GrowTogether</b>A Collabrative Platform for connecting People with Unique and Similar Hobbies and Talents</li>
+            <li><b>GrowTogether:</b>A Collabrative Platform for connecting People with Unique and Similar Hobbies and Talents</li>
         </ul>
     </div>
 
@@ -221,6 +238,55 @@
 <footer>
     <p>Thanks for Visiting</p>
 </footer>
+<script>
+    function showSkillInfo(skill) {
+        let skillTitle = document.getElementById("skill-title");
+        let skillDescription = document.getElementById("skill-description");
+        let skillImage = document.getElementById("skill-image");
 
+        const skillsData = {
+            "c": { 
+                title: "C Programming", 
+                desc: "C is a powerful low-level programming language used for system programming and embedded systems.", 
+                img: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
+            },
+            "java": { 
+                title: "Java", 
+                desc: "Java is a widely-used object-oriented programming language known for its platform independence and strong performance.", 
+                img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+            },
+            "git": { 
+                title: "Git & Linux", 
+                desc: "Version control using Git and essential Linux commands for software development and deployment.", 
+                img: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            },
+            "html": { 
+                title: "HTML & CSS", 
+                desc: "Core web technologies for structuring (HTML) and styling (CSS) web pages.", 
+                img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            },
+            "python": { 
+                title: "C++ & Python", 
+                desc: "C++ for high-performance applications; Python for data science, AI, and automation.", 
+                img: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            },
+            "ai": { 
+                title: "AI Tools", 
+                desc: "Exploring AI-powered tools for automation, data analysis, and machine learning applications.", 
+                img: "https://cdn-icons-png.flaticon.com/512/4712/4712036.png"
+            }
+        };
+
+        skillTitle.innerText = skillsData[skill].title;
+        skillDescription.innerText = skillsData[skill].desc;
+        skillImage.src = skillsData[skill].img;
+
+        document.getElementById("skill-info").style.display = "block";
+    }
+
+    function closeSkillInfo() {
+        document.getElementById("skill-info").style.display = "none";
+    }
+</script>
 </body>
 </html>
