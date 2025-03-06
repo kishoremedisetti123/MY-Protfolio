@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>My Portfolio</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -112,8 +113,32 @@
             color: #555;
             margin-bottom: 20px;
         }
-    </style>
-        <link rel="stylesheet" href="styles.css">
+        .skills a i {
+            font-size: 20px;  /* Smaller icon size */
+            margin-right: 10px;
+        }
+
+        .skills a {
+            display: flex;
+            align-items: center;
+            font-size: 16px; /* Adjust text size */
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .skills a:hover {
+            transform: scale(1.1); /* Slight hover effect */
+        }
+
+        .skills a img {
+            width: 28px; /* Smaller icon size */
+            height: 28px;
+            margin-right: 10px;
+        }
+
+        </style>
 </head>
 <body>
 
@@ -153,41 +178,31 @@
 
     <div class="section skills">
         <h2>Skills</h2>
-        <div class="skill-container">
-            <div class="skill" onclick="showSkillInfo('c')">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C Programming">
-                <p>C Programming</p>
-            </div>
-            <div class="skill" onclick="showSkillInfo('java')"">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
-                <p>Java</p>
-            </div>
-            <div class="skill" onclick="showSkillInfo('git')"">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968853.png" alt="Git & Linux">
-                <p>Git & Linux</p>
-            </div>
-            <div class="skill" onclick="showSkillInfo('html')"">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML & CSS">
-                <p>HTML & CSS</p>
-            </div>
-            <div class="skill" onclick="showSkillInfo('python')"">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="C++ & Python">
-                <p>C++ & Python</p>
-            </div>
-            <div class="skill" onclick="showSkillInfo('ai')"">
-                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712036.png" alt="AI Tools">
-                <p>AI Tools</p>
-            </div>
-        </div>
-    </div>
-
     
-    <!-- Skill Info Popup -->
-    <div id="skill-info" class="skill-popup">
-        <span class="close-btn" onclick="closeSkillInfo()">&times;</span>
-        <h3 id="skill-title"></h3>
-        <p id="skill-description"></p>
-        <img id="skill-image" src="" alt="Skill Image">
+        <a href="#" class="skill" title="C Programming">
+            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C Icon"> C
+        </a>
+    
+        <a href="#" class="skill" title="Java Programming">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Icon"> Java
+        </a>
+    
+        <a href="#" class="skill" title="Git, GitHub & Linux">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git Icon"> Git & Linux
+        </a>
+    
+        <a href="#" class="skill" title="HTML & CSS">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML CSS Icon"> HTML & CSS
+        </a>
+    
+        <a href="#" class="skill" title="C++ & Python">
+            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++ Icon"> C++
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Icon"> Python
+        </a>
+    
+        <a href="#" class="skill" title="AI Tools">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712038.png" alt="AI Icon"> AI Tools
+        </a>
     </div>
     
     <div class="section certifications">
@@ -237,54 +252,5 @@
 <footer>
     <p>Thanks for Visiting</p>
 </footer>
-<script>
-    function showSkillInfo(skill) {
-        let skillTitle = document.getElementById("skill-title");
-        let skillDescription = document.getElementById("skill-description");
-        let skillImage = document.getElementById("skill-image");
-
-        const skillsData = {
-            "c": { 
-                title: "C Programming", 
-                desc: "C is a powerful low-level programming language used for system programming and embedded systems.", 
-                img: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
-            },
-            "java": { 
-                title: "Java", 
-                desc: "Java is a widely-used object-oriented programming language known for its platform independence and strong performance.", 
-                img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
-            },
-            "git": { 
-                title: "Git & Linux", 
-                desc: "Version control using Git and essential Linux commands for software development and deployment.", 
-                img: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-            },
-            "html": { 
-                title: "HTML & CSS", 
-                desc: "Core web technologies for structuring (HTML) and styling (CSS) web pages.", 
-                img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-            },
-            "python": { 
-                title: "C++ & Python", 
-                desc: "C++ for high-performance applications; Python for data science, AI, and automation.", 
-                img: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-            },
-            "ai": { 
-                title: "AI Tools", 
-                desc: "Exploring AI-powered tools for automation, data analysis, and machine learning applications.", 
-                img: "https://cdn-icons-png.flaticon.com/512/4712/4712036.png"
-            }
-        };
-
-        skillTitle.innerText = skillsData[skill].title;
-        skillDescription.innerText = skillsData[skill].desc;
-        skillImage.src = skillsData[skill].img;
-
-        document.getElementById("skill-info").style.display = "block";
-    }
-    function closeSkillInfo() {
-        document.getElementById("skill-info").style.display = "none";
-    }
-</script>
 </body>
 </html>
